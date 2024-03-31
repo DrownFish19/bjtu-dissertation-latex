@@ -1,0 +1,27 @@
+@inproceedings{Adnan2021Accelerating,
+  title = {Accelerating {{Recommendation System Training}} by {{Leveraging Popular Choices}}},
+  booktitle = {Proceedings of the {{VLDB Endowment}}},
+  author = {Adnan, Muhammad and Maboud, Yassaman Ebrahimzadeh and Mahajan, Divya and Nair, Prashant J.},
+  date = {2021-09},
+  volume = {15},
+  pages = {127--140},
+  abstract = {Recommender models are commonly used to suggest relevant items to a user for e-commerce and online advertisement-based applications. These models use massive embedding tables to store numerical representation of items' and users' categorical variables (memory intensive) and employ neural networks (compute intensive) to generate final recommendations. Training these large-scale recommendation models is evolving to require increasing data and compute resources. The highly parallel neural networks portion of these models can benefit from GPU acceleration however, large embedding tables often cannot fit in the limited-capacity GPU device memory. Hence, this paper deep dives into the semantics of training data and obtains insights about the feature access, transfer, and usage patterns of these models. We observe that, due to the popularity of certain inputs, the accesses to the embeddings are highly skewed with a few embedding entries being accessed up to 10000X more. This paper leverages this asymmetrical access pattern to offer a framework, called FAE, and proposes a hot-embedding aware data layout for training recommender models. This layout utilizes the scarce GPU memory for storing the highly accessed embeddings, thus reduces the data transfers from CPU to GPU. At the same time, FAE engages the GPU to accelerate the executions of these hot embedding entries. Experiments on production-scale recommendation models with real datasets show that FAE reduces the overall training time by 2.3X and 1.52X in comparison to XDL CPU-only and XDL CPU-GPU execution while maintaining baseline accuracy.},
+  language = {en},
+  annotation = {JCR分区: Q2 中科院分区升级版: 计算机科学3区 影响因子: 2.5 5年影响因子: 3.3 EI: 是}
+}
+
+@article{AlKheder2020Bayesian,
+  title = {Bayesian {{Combined Neural Network}} for {{Traffic Volume Short-Term Forecasting}} at {{Adjacent Intersections}}},
+  shorttitle = {{{BCNN}}},
+  author = {AlKheder, Sharaf and Alkhamees, Wasan and Almutairi, Reyouf and Alkhedher, Mohammad},
+  date = {2020-06-18},
+  journaltitle = {Neural Computing and Applications},
+  shortjournal = {Neural Computing and Applications},
+  volume = {33},
+  number = {6},
+  pages = {1785--1836},
+  issn = {0941-0643, 1433-3058},
+  abstract = {Undoubtedly, one of the greatest issues nowadays is congestion. To face such problem, forecasting of traffic is required. Bayesian combined neural network (BCNN) is applied to four different locations in Kuwait (Cairo Street, Riyadh Street, Maghreb Road and Istiqlal Road) to predict the short-term traffic volume at the middle section due to traffic flow from adjacent intersections. All data were collected for a period of 1 week over 15-min observation intervals using loop detectors. In addition to time-series responses and regression plots, mean square error (MSE) has been used to validate the network performance after data normalization. In comparison with MSE and R values, both values were slightly less precise during weekdays compared to weekends. After standardizing, the average MSE during weekdays was 0.003468 and regression (R) was 0.98113 for the four streets. For weekends model, the average MSE was 0.003563 and regression (R) was 0.97374 for the four streets. Istiqlal Street weekday model was the best model that fits the information among all the four models; as it has the smallest MSE value equivalent to 0.0010087 and the highest R value of 0.9959. BCNN model has achieved outstanding prediction performance with great potential to be generalized for various locations at different times of the day. These results can allow transportation planners to forecast traffic congestions and take prior measures to avoid them. Further modeling can assist in studying factors causing intersection congestions.},
+  language = {en},
+  annotation = {abstractTranslation: 毫无疑问，当今最大的问题之一是拥堵。面对这样的问题，需要对交通量进行预测。将贝叶斯组合神经网络（BCNN）应用于科威特四个不同的地点（开罗街、利雅得街、马格里布路和伊斯蒂库拉路），预测由于相邻十字路口的交通流量而导致的中段短期交通量。使用环形探测器在15分钟的观察间隔内收集1周的所有数据。除了时间序列响应和回归图外，均方误差（MSE）还用于验证数据归一化后的网络性能。与MSE和R值相比，与周末相比，这两个值在工作日的精度略低。标准化后，四条街道工作日的平均MSE为0.003468，回归（R）为0.98113。对于周末模型，四条街道的平均MSE为0.003563，回归（R）为0.97374。Istiqlal Street平日模型是四种模型中最符合信息的模型；因为它具有等效于0.001087的最小MSE值和0.9959的最高R值。BCNN模型取得了卓越的预测性能，具有在一天中不同时间推广到不同地点的巨大潜力。这些结果可以让交通规划者预测交通拥堵，并采取预先措施避免拥堵。进一步的建模可以帮助研究造成交叉口拥堵的因素。 JCR分区: Q2 中科院分区升级版: 计算机科学3区 影响因子: 6.0 5年影响因子: 5.6 EI: 是 中科院分区基础版: 工程技术2区 CCF: C}
+}

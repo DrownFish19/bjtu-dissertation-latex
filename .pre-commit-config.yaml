@@ -1,0 +1,38 @@
+repos:
+  - repo: https://github.com/cmhughes/latexindent.pl.git
+    rev: V3.23.6
+    hooks:
+      - id: latexindent
+        args: [-l, -m, -s, -w]
+  - repo: https://github.com/jonasbb/pre-commit-latex-hooks
+    rev: v1.4.0
+    hooks:
+      - id: american-eg-ie
+      - id: cleveref-capitalization
+      - id: consistent-spelling
+        args:
+            [
+              "--emph=et al.",
+              "--emph=a priori",
+              "--emph=a posteriori",
+              '--regex=naive=\bna(i|\\"i)ve',
+            ]
+      - id: csquotes
+      # - id: ensure-labels-for-sections
+      - id: no-space-in-cite
+      # - id: tilde-cite 中文论文不适用～\cite{}
+      - id: unique-labels
+        # args:
+        #     [
+        #       # If present only check that there is a \label{} but not the value
+        #       "--ignore-label-content",
+        #     ]
+      - id: cleveref-instead-of-autoref
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+      - id: check-merge-conflict
+      # - id: check-yaml
+      - id: trailing-whitespace
+        files: ".*\\.(?:tex|py)$"
+        

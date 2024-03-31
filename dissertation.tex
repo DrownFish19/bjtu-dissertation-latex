@@ -1,0 +1,100 @@
+\documentclass[Doctor,twoside,fontset=windows]{BJTU-thesis}
+% Doctor 博士学位论文
+% twoside 双面论文
+% blind 盲审版本
+% print 打印版本，增加页边距
+
+\newcommand{\model}{D$^3$STN}
+
+%%%%%%%%%%%%%%%%%%% 1.设定图片查找目录 %%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{博士学位论文插图/}}
+
+%%%%%%%%%%%%%%% 2.填写封面信息 %%%%%%%%%%%%%%%%%%%%
+\title{中文题目}
+\englishtitle{英文题目}
+\author{作者姓名}
+\studentNumber{学号}
+\advisor{导师姓名}
+\advisorTitle{教{\ziju{1}授}}
+\degreeType{工{\ziju{1}学}}
+\major{作者专业}
+\researchArea{研究方向}
+
+% 学位论文数据集表格补充填写
+% 题目姓名等使用上述信息填写
+\datasetskeywords{论文关键词} % 论文关键词，
+\datasetsfunding{}
+\datasetschairman{XXXX} %答辩委员会主席
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeindex
+\makeindex[name=class,options=-s mystyle,title=分类索引,columns=2]
+\makeindex[name=author,options=-s mystyle,title=著者索引,columns=2]
+\makeindex[name=keyword,options=-s mystyle,title=关键词索引,columns=2]
+
+\begin{document}
+\makecover
+\makeAuthorization
+\cleardoublepage
+\makeInfo
+\cleardoublepage
+
+\blindinclude{chapters/committee} % 答辩委员会名单
+\blindinclude{chapters/thanksshort} % 致谢
+
+\include{chapters/abstract} % 中文摘要
+\include{chapters/englishabstract} % 英文摘要
+\include{chapters/preface} %序言
+\tableofcontents % 目录
+\cleardoublepage
+
+\makecnfigtoc % 中文插图索引
+\makeenfigtoc % 英文插图索引
+\makecntabtoc % 中文表格索引
+\makeentabtoc % 英文表格索引
+
+\clearpage
+\input{chapters/denotation} % 缩略表
+%\include{chapters/Symbols}
+\cleardoublepage
+
+\newpage\pagenumbering{arabic}
+\include{chapters/chapter01} % 绪论
+\include{chapters/chapter02} % 基础技术介绍
+\include{chapters/chapter03} % 第三章
+\include{chapters/chapter04} % 第四章
+\include{chapters/chapter05} % 第五章
+
+\bibliography{reference.bib}
+
+%\appendix
+\include{chapters/appendix}
+
+%\chapter*{索引}
+%\pagestyle{fancy}
+%\addcontentsline{toc}{chapter}{索引}
+
+%\printindex[class]
+%\addcontentsline{toc}{section}{分类索引}
+
+%\printindex[author]
+%\addcontentsline{toc}{section}{著者索引}
+
+%\printindex[keyword]
+%\addcontentsline{toc}{section}{关键词索引}
+
+%% 个人简介
+\include{chapters/research}
+
+%% 答辩决议
+\blindinclude{chapters/decision.tex}
+
+%% 独创性声明
+\include{chapters/declaration}
+
+%% 学位论文数据集
+\makeDataset
+
+%\include{chapters/pagecount}
+
+\end{document}

@@ -1,0 +1,29 @@
+# macos files
+.DS_Store
+
+# latex files
+.texpadtmp/*
+*.aux
+*.synctex.gz
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof*
+*.lot*
+*.idx
+*.fls
+*.fdb_latexmk
+
+# pre-commit files
+*.bak
+*.log
+
+# output files
+dissertation*.pdf
+*.zip
+
+# other files
+*.docx
+*.txt
