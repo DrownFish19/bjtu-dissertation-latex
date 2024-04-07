@@ -80,9 +80,9 @@
 \setmonofont{Courier New}
 \newfontfamily\consolas{Consolas}
 %% 设置中文字体及加粗大小
-\setCJKmainfont[AutoFakeBold = {4.0},ItalicFont={KaiTi}]{SimSun}
-\setCJKfamilyfont{zhkai}[AutoFakeBold = {4.0}]{KaiTi}
-\setCJKfamilyfont{zhsong}[AutoFakeBold = {4.0}]{SimSun}
+\setCJKmainfont[AutoFakeBold = {2.5},ItalicFont={KaiTi}]{SimSun}
+\setCJKfamilyfont{zhkai}[AutoFakeBold = {2.5}]{KaiTi}
+\setCJKfamilyfont{zhsong}[AutoFakeBold = {2.5}]{SimSun}
 
 % 参考文献控制
 % https://github.com/zepinglee/gbt7714-bibtex-style
